@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #6c63ff;
+  --color-brand-dark: #4b44cc;
+  --color-brand-light: #ede9ff;
+  --color-accent: #ff6584;
+  --color-surface: #f8f7ff;
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #6b7280;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-border-light: #e5e3ff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-shimmer: shimmer 1.5s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.2s ease-out;
+  --animate-slide-up: slide-up 0.3s ease-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    #e5e3ff 25%,
+    #d4d0ff 50%,
+    #e5e3ff 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
