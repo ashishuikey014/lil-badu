@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   title: "Lil-Badu — Compress & Convert Images",
   description:
     "Free, fast, and private image compression and format conversion. Supports PNG, JPG, WebP, AVIF, and HEIC. No file size limits.",
+  icons: { icon: "/lb-icon.svg" },
 };
 
 export default function RootLayout({

@@ -3,22 +3,11 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-border-light bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-4xl items-center gap-3 px-4 py-4 sm:px-6">
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-brand">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-          </div>
+          <img
+            src="/lb-icon.svg"
+            alt="Lil-Badu logo"
+            className="h-8 w-8"
+          />
           <span
             className="text-xl font-bold tracking-tight text-text-primary"
             style={{ fontFamily: "var(--font-brand)" }}
